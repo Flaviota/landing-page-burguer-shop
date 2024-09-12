@@ -3,13 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="src/styles/styles.css">
-    <link rel="stylesheet" href="src/styles/header.css">
-    <link rel="stylesheet" href="src/styles/home.css">
-    <link rel="stylesheet" href="src/styles/menu.css">
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Landing page</title>
 </head>
 <body>
@@ -19,95 +16,93 @@
 
             <ul id="nav_list">
                 <li class="nav-item active">
-                    <a href="#home">Início</a>
+                    <a href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#menu">Cardápios</a>
+                    <a href="#menu">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#testemonials">avaliações</a>
+                    <a href="#testimonials">Testimonials</a>
                 </li>
             </ul>
+
             <button class="btn-default">
                 Peça aqui
             </button>
 
             <button id="mobile_btn">
-                    <i class="fa-solid fa-bars"></i>    
+                <i class="fa-solid fa-bars"></i>
             </button>
         </nav>
+
         <div id="mobile_menu">
             <ul id="mobile_nav_list">
-                <li class="nav_item">
-                    <a href="#home">Início</a>
+                <li class="nav-item">
+                    <a href="#home">Home</a>
                 </li>
-                <li class="nav_item">
-                    <a href="#menu">Cardápios</a>
+                <li class="nav-item">
+                    <a href="#menu">Menu</a>
                 </li>
-                <li class="nav_item">
-                    <a href="#testemonials">avaliações</a>
+                <li class="nav-item">
+                    <a href="#testimonials">Testimonials</a>
                 </li>
             </ul>
-        </div>
 
-        <button class="btn-default">
-           Peça aqui  
-    </button>
+            <button class="btn-default">
+                Order here
+            </button>
+        </div>
     </header>
 
     <main id="content">
         <section id="home">
             <div class="shape"></div>
             <div id="cta">
-                  <h1 class="title">
-                    O sabor vai até 
-                    <span>você</span>
-                  </h1>  
+                <h1 class="title">
+                    Your hunger calls for it, we deliver the
+                    <span>flavor</span>
+                </h1>
 
-                  <p class="description">
-                    Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit. 
-                    Sed do eiusmod tempor incididunt
-                  </p>
+                <p class="description">
+                    Our burger joint is passionate about authentic flavors and irresistible combinations
+                 </p>
 
-                  <div id="cta_buttons">
-                    <a href="#" class="btn_default">
-                        Ver cardápio
+                <div id="cta_buttons">
+                    <a href="#" class="btn-default">
+                        See menu
                     </a>
 
-                    <a href="tel:+55 99999-999" id="phone_button">
+                    <a href="tel:+55555555555" id="phone_button">
                         <button class="btn-default">
-                                <i class="fa-solid fa-phone"> </i>                      
+                            <i class="fa-solid fa-phone"></i>
                         </button>
-                        (51) 88344-3434
+                        (51) 92342-3243
                     </a>
-                  </div>
+                </div>
 
-                  <div class="social-media-buttona">
-                        <a href="">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
+                <div class="social-media-buttons">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
 
-                        <a href="">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
 
-                        <a href="">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                  </div>
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
             </div>
 
             <div id="banner">
-                <img src="src/images/hero.png" alt="">
-
+                <img src="src/images/hero2.png" alt="">
             </div>
-
         </section>
 
         <section id="menu">
-            <h2 class="section-title">Cardápio</h2>
-            <h3 class="section-subtitle">Nossos pratos especiais</h3>
+            <h2 class="section-title">Menu</h2>
+            <h3 class="section-subtitle">Snacks and appetizers in one place</h3>
 
             <div id="dishes">
                 <div class="dish">
@@ -115,14 +110,14 @@
                         <i class="fa-solid fa-heart"></i>
                     </div>
 
-                    <img src="src/images/dish.png" class="dish-image" alt="">
+                    <img src="src/images/food1.png" class="dish-image" alt="">
 
                     <h3 class="dish-title">
-                        Lorem Ipsum
+                        Beef burger
                     </h3>
 
                     <span class="dish-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cheese, potatoes, hamburger and onion
                     </span>
 
                     <div class="dish-rate">
@@ -131,7 +126,39 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <span>(500+)</span>
+                        <span>(100+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$22,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/images/food2.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        French fries
+                    </h3>
+
+                    <span class="dish-description">
+                        Portion with barbecue sauce
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(100+)</span>
                     </div>
 
                     <div class="dish-price">
@@ -147,14 +174,14 @@
                         <i class="fa-solid fa-heart"></i>
                     </div>
 
-                    <img src="src/images/dish2.png" class="dish-image" alt="">
+                    <img src="src/images/food3.png" class="dish-image" alt="">
 
                     <h3 class="dish-title">
-                        Lorem Ipsum
+                        Fried shrimp
                     </h3>
 
                     <span class="dish-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Portion with tomato sauce
                     </span>
 
                     <div class="dish-rate">
@@ -163,7 +190,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <span>(500+)</span>
+                        <span>(100+)</span>
                     </div>
 
                     <div class="dish-price">
@@ -179,14 +206,14 @@
                         <i class="fa-solid fa-heart"></i>
                     </div>
 
-                    <img src="src/images/dish3.png" class="dish-image" alt="">
+                    <img src="src/images/food4.png" class="dish-image" alt="">
 
                     <h3 class="dish-title">
-                        Lorem Ipsum
+                        Chicken burger
                     </h3>
 
                     <span class="dish-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Onion, tomato, lettuce and cheddar
                     </span>
 
                     <div class="dish-rate">
@@ -195,52 +222,104 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <span>(500+)</span>
+                        <span>(100+)</span>
                     </div>
 
                     <div class="dish-price">
-                        <h4>R$20,00</h4>
-                        <button class="btn-default">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="dish">
-                    <div class="dish-heart">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-
-                    <img src="src/images/dish4.png" class="dish-image" alt="">
-
-                    <h3 class="dish-title">
-                        Lorem Ipsum
-                    </h3>
-
-                    <span class="dish-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </span>
-
-                    <div class="dish-rate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>(500+)</span>
-                    </div>
-
-                    <div class="dish-price">
-                        <h4>R$20,00</h4>
+                        <h4>R$22,00</h4>
                         <button class="btn-default">
                             <i class="fa-solid fa-basket-shopping"></i>
                         </button>
                     </div>
                 </div>
             </div>
+        </section>
 
+        <section id="testimonials">
+            <img src="src/images/chef.png" id="testimonial_chef" alt="">
+
+            <div id="testimonials_content">
+                <h2 class="section-title">
+                    Testimonials
+                </h2>
+                <h3 class="section-subtitle">
+                    Whoever ate it, approves!
+                </h3>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Marcela Miranda
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Repellat voluptatibus cumque dolor ea est quae alias necessitatibus"
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Amanda Soares
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Repellat voluptatibus cumque dolor ea est quae alias necessitatibus"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn-default">
+                    See more testimonials
+                </button>
+            </div>
         </section>
     </main>
+
+    <footer>
+        <img src="src/images/wave.svg" alt="">
+
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2024 Flaviota
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
     <script src="src/javascript/script.js"></script>
 </body>
 </html>
